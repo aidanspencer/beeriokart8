@@ -1,3 +1,18 @@
+var pics = [
+    "pics/1.png", "pics/2.png", "pics/3.png", "pics/4.png", 
+    "pics/5.png", "pics/6.png", "pics/7.png", "pics/8.png", 
+    "pics/9.png", "pics/10.png", "pics/11.png", "pics/12.png",
+    "pics/13.png", "pics/14.png", "pics/15.png", "pics/16.png", 
+    "pics/17.png", "pics/18.png", "pics/19.png", "pics/20.png", 
+    "pics/21.png", "pics/22.png", "pics/23.png", "pics/24.png",
+    "pics/25.png", "pics/26.png", "pics/27.png", "pics/28.png", 
+    "pics/29.png", "pics/30.png", "pics/31.png", "pics/32.png", 
+    "pics/33.png", "pics/34.png", "pics/35.png", "pics/36.png",
+    "pics/37.png", "pics/38.png", "pics/39.png", "pics/40.png", 
+    "pics/41.png", "pics/42.png", "pics/43.png", "pics/44.png", 
+    "pics/45.png", "pics/46.png", "pics/47.png", "pics/48.png", 
+]
+
 var tracks = [
     'Mushroom Cup: Mario Kart Stadium',
     'Mushroom Cup: Water Park',
@@ -62,5 +77,6 @@ var tracks = [
 
 function newTrack() {
     var randomNumber = Math.floor(Math.random() * tracks.length);
-    document.getElementById('trackDisplay').innerHTML = tracks[randomNumber];;
+    document.getElementById('trackDisplay').innerHTML = tracks[randomNumber];
+    document.getElementById("myPicture").src = pics[randomNumber];
 }
