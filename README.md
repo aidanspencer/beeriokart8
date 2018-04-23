@@ -1,2 +1,2 @@
 # beeriokart8
-Random Mario Kart 8 Track
+Random Mario Kart 8 Track Generator
