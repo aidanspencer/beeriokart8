@@ -75,8 +75,37 @@ var tracks = [
     'Bell Cup: Big Blue',
 ]
 
+var mktracks = [
+    'Mushroom Cup: Luigi Raceway',
+    'Mushroom Cup: Moo Moo Farm',
+    'Mushroom Cup: Koopa Troopa Beach',
+    'Mushroom Cup: Kalimari Desert',
+
+    'Flower Cup: Toad\'s Turnpike',
+    'Flower Cup: Frappe Snowland',
+    'Flower Cup: Choco Mountain',
+    'Flower Cup: Mario Raceway',
+
+    'Star Cup: Wario Stadium',
+    'Star Cup: Sherbert Land',
+    'Star Cup: Royal Raceway',
+    'Star Cup: Bowser\'s Castle',
+
+    'Special Cup: DK\'s Jungle Parkway',
+    'Special Cup: Yoshi Valley',
+    'Special Cup: Banshee Boardwalk',
+    'Special Cup: Rainbow Road',
+]
+
+
 function newTrack() {
     var randomNumber = Math.floor(Math.random() * tracks.length);
     document.getElementById('trackDisplay').innerHTML = tracks[randomNumber];
     document.getElementById("myPicture").src = pics[randomNumber];
+}
+
+function new64Track() {
+    var randomNumber64 = Math.floor(Math.random() * mktracks.length);
+    document.getElementById('mktrackDisplay').innerHTML = mktracks[randomNumber64];
+    //document.getElementById("myPicture").src = pics[randomNumber];
 }
