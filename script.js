@@ -100,12 +100,12 @@ var mk64tracks = [
 
 function newTrack() {
     var randomNumber = Math.floor(Math.random() * mk8tracks.length);
-    document.getElementById('trackDisplay').innerHTML = mk8tracks[randomNumber];
+    document.getElementById('mk8trackDisplay').innerHTML = mk8tracks[randomNumber];
     document.getElementById("myPicture").src = pics[randomNumber];
 }
 
 function new64Track() {
     var randomNumber64 = Math.floor(Math.random() * mk64tracks.length);
-    document.getElementById('mktrackDisplay').innerHTML = mk64tracks[randomNumber64];
+    document.getElementById('mk64trackDisplay').innerHTML = mk64tracks[randomNumber64];
     //document.getElementById("myPicture").src = pics[randomNumber];
 }
