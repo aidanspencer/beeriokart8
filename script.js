@@ -13,7 +13,7 @@ var pics = [
     "pics/45.png", "pics/46.png", "pics/47.png", "pics/48.png", 
 ]
 
-var tracks = [
+var mk8tracks = [
     'Mushroom Cup: Mario Kart Stadium',
     'Mushroom Cup: Water Park',
     'Mushroom Cup: Sweet Sweet Canyon',
@@ -75,7 +75,7 @@ var tracks = [
     'Bell Cup: Big Blue',
 ]
 
-var mktracks = [
+var mk64tracks = [
     'Mushroom Cup: Luigi Raceway',
     'Mushroom Cup: Moo Moo Farm',
     'Mushroom Cup: Koopa Troopa Beach',
@@ -99,13 +99,13 @@ var mktracks = [
 
 
 function newTrack() {
-    var randomNumber = Math.floor(Math.random() * tracks.length);
-    document.getElementById('trackDisplay').innerHTML = tracks[randomNumber];
+    var randomNumber = Math.floor(Math.random() * mk8tracks.length);
+    document.getElementById('trackDisplay').innerHTML = mk8tracks[randomNumber];
     document.getElementById("myPicture").src = pics[randomNumber];
 }
 
 function new64Track() {
-    var randomNumber64 = Math.floor(Math.random() * mktracks.length);
-    document.getElementById('mktrackDisplay').innerHTML = mktracks[randomNumber64];
+    var randomNumber64 = Math.floor(Math.random() * mk64tracks.length);
+    document.getElementById('mktrackDisplay').innerHTML = mk64tracks[randomNumber64];
     //document.getElementById("myPicture").src = pics[randomNumber];
 }
