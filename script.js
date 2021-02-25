@@ -99,6 +99,8 @@ var mk64tracks = [
 
 
 function newTrack() {
+    var sound = document.getElementById("audio");
+    sound.play()
     var randomNumber = Math.floor(Math.random() * mk8tracks.length);
     document.getElementById('mk8trackDisplay').innerHTML = mk8tracks[randomNumber];
     document.getElementById("myPicture").src = pics[randomNumber];

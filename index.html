@@ -44,21 +44,23 @@
           <link rel="apple-touch-icon" sizes = "128x128" href="appleIcon.png">
        </head>
        <body style="background-image: url('bgDark.png'); background-color:powderblue;">
-         <h7>
+         <div>
             <center><img src="logoHeader.png" style="max-width: 100%;"></center>
-         </h7>
+         </div>
          <!--
-          <h1 style="font-size:500%; font-family:verdana; text-align:center;">
-             Mario Kart 8 Random Track
-          </h1>
+         <div>
+            <center><img src="mushroom.png" width=368></center>
+         </div>
          -->
+
           <div 
              style="color: #FFFFFF; font-size:300%; font-family:verdana; text-align:center" 
              id = "mk8trackDisplay">
              <!-- TRACK HERE -->
           </div>
           <center><img src="pics/49.png" width="368" height="248" id="myPicture"></center>
-          <div></div>
+
+          <audio id="audio" src="bruh.mp3" autoplay="false" ></audio>
           <center><button onclick = "newTrack()" class="button" style="vertical-align:middle"><span>New Track </span></button></center>
 
 
@@ -74,7 +76,7 @@
          <!-- TRACK HERE -->
         </div>
         <center><img src="pics/mk64.jpg" width="368" height="248" id="myPicture"></center>
-        <div></div>
+
         <center><button onclick = "new64Track()" class="button" style="vertical-align:middle"><span>64 Track </span></button></center>    
        </body>
     </html>
